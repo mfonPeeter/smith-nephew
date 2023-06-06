@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Boxicons CDN Link -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Poppins Google Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script defer src="js/script.js"></script>
+
+    <title>Smith | Nephew</title>
+  </head>
+  <body class="font-poppins">
+    <section
+      class="sidebar fixed z-50 top-0 left-0 w-[275px] h-full bg-[#00729C] text-white transition-all duration-500"
+    >
+      <div class="logo-details flex items-center pt-2 h-[60px] w-[100px]">
+        <button>
+          <i
+            class="bx bx-menu flex justify-center h-[46px] min-w-[78px] leading-[42px] text-3xl"
+          ></i>
+        </button>
+        <img
+          src="images/SNLogo.png"
+          class="logo_name w-[192px] h-[26px] transition-all duration-300 delay-[0.1s]"
+        />
+      </div>
+
+      <ul class="nav-links flex flex-col space-y-4 h-full pt-8">
+        <li class="relative transition-colors hover:bg-[#008cc0] py-2">
+          <a href="#" class="flex items-center">
+            <i
+              class="bx bx-home flex justify-center items-center h-[40px] min-w-[78px] text-2xl"
+            ></i>
+            <span class="link_name">Home</span>
+          </a>
+          <ul
+            class="sub-menu blank hidden pt-1 pb-4 px-[52px] text-sm bg-[#008cc0] sm:text-[15px]"
+          >
+            <li>
+              <a
+                href="#"
+                class="link_name block whitespace-nowrap opacity-60 transition-all hover:opacity-100"
+                >Home</a
+              >
+            </li>
+          </ul>
+        </li>
+
+        <li class="relative py-2 transition-colors hover:bg-[#008cc0]">
+          <button
+            class="icon-link btn-submenu w-full flex items-center space-x-3"
+          >
+            <div class="flex items-center">
+              <i
+                class="bx bx-loader-circle flex justify-center items-center h-[40px] min-w-[78px] text-2xl"
+              ></i>
+              <span class="link_name whitespace-nowrap">Process Selection</span>
+            </div>
+            <i class="bx bxs-chevron-down text-xl transition-all arrow"></i>
+          </button>
+          <ul
+            class="sub-menu hidden pt-1 pb-4 px-[75px] text-sm bg-[#008cc0] sm:text-[15px]"
+          >
+            <li class="flex flex-col space-y-3">
+              <span
+                class="link_name hidden whitespace-nowrap opacity-60 transition-all hover:opacity-100"
+                >Process Selection</span
+              >
+              <a
+                href="#"
+                class="block whitespace-nowrap opacity-60 transition-all hover:opacity-100"
+                >Uncategorized People</a
+              >
+              <a
+                href="#"
+                class="block whitespace-nowrap opacity-60 transition-all hover:opacity-100"
+                >Challenger Uploading</a
+              >
+              <a
+                href="#"
+                class="block whitespace-nowrap opacity-60 transition-all hover:opacity-100"
+                >FST RDI Export</a
+              >
+              <a
+                href="#"
+                class="block whitespace-nowrap opacity-60 transition-all hover:opacity-100"
+                >FST Payout</a
+              >
+              <a
+                href="#"
+                class="block whitespace-nowrap opacity-60 transition-all hover:opacity-100"
+                >FAR RDI Export</a
+              >
+            </li>
+          </ul>
+        </li>
+
+        <li class="relative py-2 transition-colors hover:bg-[#008cc0]">
+          <button
+            class="icon-link btn-submenu w-full flex items-center space-x-10"
+          >
+            <div class="flex items-center">
+              <i
+                class="bx bx-cog flex justify-center items-center h-[40px] min-w-[78px] text-2xl"
+              ></i>
+              <span class="link_name">Configuration</span>
+            </div>
+            <i class="bx bxs-chevron-down text-xl transition-all arrow"></i>
+          </button>
+          <ul
+            class="sub-menu hidden pt-1 pb-4 px-8 text-sm bg-[#008cc0] sm:px-6 sm:text-[15px]"
+          >
+            <li class="flex flex-col space-y-3">
+              <span
+                class="link_name hidden whitespace-nowrap opacity-60 transition-all hover:opacity-100"
+                >Configuration</span
+              >
+              <a
+                href="#"
+                class="block whitespace-nowrap opacity-60 transition-all hover:opacity-100"
+                >Uncategorized People - Config</a
+              >
+              <a
+                href="#"
+                class="block whitespace-nowrap opacity-60 transition-all hover:opacity-100"
+                >Challenger Uploading - Config</a
+              >
+              <a
+                href="#"
+                class="block whitespace-nowrap opacity-60 transition-all hover:opacity-100"
+                >FST - Config</a
+              >
+              <a
+                href="#"
+                class="block whitespace-nowrap opacity-60 transition-all hover:opacity-100"
+                >FAR - Config</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section
+      class="home-section relative left-[275px] w-[calc(100%-275px)] h-screen pt-4 px-4 text-center bg-[#F5F8F9] transition-all duration-500"
+    >
+      <div class="home-content mt-20">
+        <h1 class="text-3xl text-[#333] font-semibold">
+          GTCE Data Import Process App
+        </h1>
+        <div
+          class="mx-auto w-24 -mt-4 mb-4 text-center border-b-4 border-[#ff9e18]"
+        >
+          &nbsp;
+        </div>
+        <p class="max-w-3xl mx-auto">
+          This toolkit contains a few app for processing file and formatting
+          file for reporting and system importing.
+        </p>
+      </div>
+    </section>
+  </body>
+</html>

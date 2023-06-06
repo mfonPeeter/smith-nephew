@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    color: #555;
+  }
+}
+
+@layer components {
+  .sidebar.close {
+    @apply w-[78px];
+  }
+
+  .sidebar.close .logo-details .logo_name {
+    @apply opacity-0 pointer-events-none delay-0;
+  }
+
+  .sidebar .nav-links li.showMenu i.arrow {
+    @apply rotate-180;
+  }
+
+  .sidebar.close .nav-links i.arrow {
+    @apply hidden;
+  }
+
+  .sidebar .nav-links li.showMenu .sub-menu {
+    @apply block;
+  }
+
+  .sidebar .nav-links li.showMenu {
+    @apply pb-0;
+  }
+
+  .sidebar.close .nav-links li.showMenu {
+    @apply pb-2;
+  }
+
+  .sidebar.close .nav-links li .icon-link {
+    @apply block;
+  }
+
+  .sidebar.close .nav-links li .sub-menu {
+    @apply absolute left-full -top-2.5 py-3 px-5 rounded-r-md opacity-0 block pointer-events-none;
+  }
+
+  .sidebar.close .nav-links li:hover .sub-menu {
+    @apply top-0 opacity-100 pointer-events-auto transition-all duration-[0.4s];
+  }
+
+  .sidebar.close .nav-links li a .link_name,
+  .sidebar.close .nav-links li button .link_name {
+    @apply opacity-0 pointer-events-none;
+  }
+
+  .sidebar.close .nav-links li .sub-menu .link_name {
+    @apply block text-base font-semibold opacity-100;
+  }
+
+  .sidebar.close .nav-links li .sub-menu.blank {
+    @apply -mt-1 px-2 py-3 opacity-0 pointer-events-none;
+  }
+
+  .sidebar.close .nav-links li:hover .sub-menu.blank {
+    @apply opacity-100 pointer-events-auto;
+  }
+
+  .sidebar.close .nav-links li:hover .sub-menu.blank {
+    @apply top-1/2 -translate-y-1/2;
+  }
+
+  .sidebar.close ~ .home-section {
+    @apply left-[78px] w-[calc(100%-78px)];
+  }
+}
