@@ -17,9 +17,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/css/style.css" />
-    <script defer src="js/script.js"></script>
+    <script defer src="/src/js/script.js"></script>
 
-    <title>Smith | Nephew</title>
+    <title>Smith | Nephew - Challenger Uploading</title>
   </head>
   <body>
     <section
@@ -32,14 +32,14 @@
           ></i>
         </button>
         <img
-          src="images/SNLogo.png"
+          src="/src/images/SNLogo.png"
           class="logo_name w-[192px] h-[26px] transition-all duration-300 delay-[0.1s]"
         />
       </div>
 
       <ul class="nav-links flex flex-col space-y-4 h-full pt-8">
         <li class="relative transition-colors hover:bg-[#008cc0] py-2">
-          <a href="./index.html" class="flex items-center">
+          <a href="/src/index.html" class="flex items-center">
             <i
               class="bx bx-home flex justify-center items-center h-[40px] min-w-[78px] text-2xl"
             ></i>
@@ -50,7 +50,7 @@
           >
             <li>
               <a
-                href="./index.html"
+                href="/src/index.html"
                 class="link_name block whitespace-nowrap opacity-60 transition-all hover:opacity-100"
                 >Home</a
               >
@@ -79,27 +79,27 @@
                 >Process Selection</span
               >
               <a
-                href="html/process-selection/uncategorized-people.html"
+                href="./uncategorized-people.html"
                 class="block whitespace-nowrap opacity-60 transition-all hover:opacity-100"
                 >Uncategorized People</a
               >
               <a
-                href="html/process-selection/challenger-uploading.html"
+                href="./challenger-uploading.html"
                 class="block whitespace-nowrap opacity-60 transition-all hover:opacity-100"
                 >Challenger Uploading</a
               >
               <a
-                href="html/process-selection/fst-rdi-export.html"
+                href="./fst-rdi-export.html"
                 class="block whitespace-nowrap opacity-60 transition-all hover:opacity-100"
                 >FST RDI Export</a
               >
               <a
-                href="html/process-selection/fst-payout.html"
+                href="./fst-payout.html"
                 class="block whitespace-nowrap opacity-60 transition-all hover:opacity-100"
                 >FST Payout</a
               >
               <a
-                href="html/process-selection/far-rdi.html"
+                href="./far-rdi.html"
                 class="block whitespace-nowrap opacity-60 transition-all hover:opacity-100"
                 >FAR RDI Export</a
               >
@@ -128,7 +128,7 @@
                 >Configuration</span
               >
               <a
-                href="html/configuration/uncategorized-categorization.html"
+                href="/src/html/configuration/uncategorized-categorization.html"
                 class="block whitespace-nowrap opacity-60 transition-all hover:opacity-100"
                 >Uncategorized People - Config</a
               >
@@ -154,21 +154,87 @@
     </section>
 
     <section
-      class="home-section relative left-[275px] w-[calc(100%-275px)] h-screen pt-4 px-4 text-center bg-[#F5F8F9] transition-all duration-500"
+      class="home-section relative left-[275px] w-[calc(100%-275px)] h-screen pt-4 px-4 bg-[#F5F8F9] transition-all duration-500 lg:px-10"
     >
-      <div>
-        <h1 class="text-3xl text-[#333] font-semibold">
-          GTCE Data Import Process App
-        </h1>
-        <div
-          class="mx-auto w-24 -mt-4 mb-4 text-center border-b-4 border-[#ff9e18]"
-        >
-          &nbsp;
-        </div>
-        <p class="max-w-3xl mx-auto">
-          This toolkit contains a few app for processing file and formatting
-          file for reporting and system importing.
+      <div class="mb-10 text-center">
+        <h2 class="text-2xl text-[#333] font-semibold mb-3">
+          GCTE Challenger Uploading
+        </h2>
+        <p class="mx-auto max-w-4xl">
+          App will process the Uncategorized People file to modify the file by
+          adding columns and updating some values. Additionally, two CSV file
+          will be generated for uploading.
         </p>
+      </div>
+
+      <div class="pt-4 pb-8 px-3 w-full bg-white rounded-lg shadow-md">
+        <div
+          class="flex flex-col-reverse space-y-reverse space-y-2 mb-6 sm:flex-row sm:items-center sm:space-x-6 sm:space-y-0"
+        >
+          <div class="flex space-x-2">
+            <button
+              class="px-4 py-[5px] text-white bg-[#00729c] rounded-lg shadow-lg transition-all hover:bg-[#008cc0] hover:translate-y-0.5 hover:shadow-xl sm:px-5 sm:py-1.5"
+            >
+              Submit
+            </button>
+            <button
+              class="px-4 py-[5px] text-white bg-gray-500 rounded-lg shadow-lg transition-all hover:bg-gray-600 hover:translate-y-0.5 hover:shadow-xl sm:px-5 sm:py-1.5"
+            >
+              Refresh
+            </button>
+          </div>
+          <div>
+            <input type="checkbox" />
+            <label class="text-sm">Upload to SFTP</label>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
+          <div class="bg-white border rounded-md">
+            <h4 class="py-1.5 px-3 font-semibold bg-zinc-100">
+              Commercial Insight Files
+            </h4>
+            <ul class="list text-sm">
+              <li class="py-1 px-3 border-b">Certificate of Completion</li>
+              <li class="py-1 px-3 border-b">
+                Another Certificate of Completion
+              </li>
+            </ul>
+          </div>
+          <div class="bg-white border rounded-md">
+            <h4 class="py-1.5 px-3 font-semibold bg-zinc-100">
+              Role Play Files
+            </h4>
+            <ul class="list text-sm">
+              <li class="py-1 px-3 border-b">Certificate of Completion</li>
+              <li class="py-1 px-3 border-b">
+                Another Certificate of Completion
+              </li>
+            </ul>
+          </div>
+          <div class="bg-white border rounded-md">
+            <h4 class="py-1.5 px-3 font-semibold bg-zinc-100">
+              Coaching Challenger Files
+            </h4>
+            <ul class="list text-sm">
+              <li class="py-1 px-3 border-b">Certificate of Completion</li>
+              <li class="py-1 px-3 border-b">
+                Another Certificate of Completion
+              </li>
+            </ul>
+          </div>
+          <div class="bg-white border rounded-md">
+            <h4 class="py-1.5 px-3 font-semibold bg-zinc-100">
+              eLearning File
+            </h4>
+            <ul class="list text-sm">
+              <li class="py-1 px-3 border-b">Certificate of Completion</li>
+              <li class="py-1 px-3 border-b">
+                Another Certificate of Completion
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
   </body>

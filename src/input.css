@@ -4,11 +4,13 @@
 
 @layer base {
   body {
+    font-family: "Poppins", sans-serif;
     color: #555;
   }
 }
 
 @layer components {
+  /* SIDEBAR */
   .sidebar.close {
     @apply w-[78px];
   }
@@ -72,5 +74,22 @@
 
   .sidebar.close ~ .home-section {
     @apply left-[78px] w-[calc(100%-78px)];
+  }
+
+  /* FILE INPUT TYPE */
+  input[type="file"]::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    padding: 7px 20px;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+    @apply bg-gray-500 transition-all hover:bg-gray-600;
+  }
+
+  /* LIST */
+  .list li:last-child {
+    @apply border-0;
   }
 }
