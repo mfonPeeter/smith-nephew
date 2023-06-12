@@ -691,12 +691,8 @@ input[type="file"]::file-selector-button:hover {
   margin-left: -0.375rem;
 }
 
-.-mt-4 {
-  margin-top: -1rem;
-}
-
-.mb-10 {
-  margin-bottom: 2.5rem;
+.mb-12 {
+  margin-bottom: 3rem;
 }
 
 .mb-2 {
@@ -743,6 +739,10 @@ input[type="file"]::file-selector-button:hover {
   height: 40px;
 }
 
+.h-\[450px\] {
+  height: 450px;
+}
+
 .h-\[46px\] {
   height: 46px;
 }
@@ -757,10 +757,6 @@ input[type="file"]::file-selector-button:hover {
 
 .h-screen {
   height: 100vh;
-}
-
-.w-24 {
-  width: 6rem;
 }
 
 .w-\[100px\] {
@@ -787,16 +783,16 @@ input[type="file"]::file-selector-button:hover {
   min-width: 78px;
 }
 
-.max-w-3xl {
-  max-width: 48rem;
-}
-
 .max-w-4xl {
   max-width: 56rem;
 }
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.resize {
+  resize: both;
 }
 
 .grid-cols-1 {
@@ -887,6 +883,10 @@ input[type="file"]::file-selector-button:hover {
   border-radius: 0.375rem;
 }
 
+.rounded-sm {
+  border-radius: 0.125rem;
+}
+
 .rounded-l {
   border-top-left-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
@@ -905,18 +905,14 @@ input[type="file"]::file-selector-button:hover {
   border-bottom-width: 1px;
 }
 
-.border-b-4 {
-  border-bottom-width: 4px;
-}
-
 .border-\[\#888\] {
   --tw-border-opacity: 1;
   border-color: rgb(136 136 136 / var(--tw-border-opacity));
 }
 
-.border-\[\#ff9e18\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 158 24 / var(--tw-border-opacity));
+.bg-\[\#00394e\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 57 78 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#00729C\] {
@@ -1038,6 +1034,10 @@ input[type="file"]::file-selector-button:hover {
 
 .pt-1 {
   padding-top: 0.25rem;
+}
+
+.pt-16 {
+  padding-top: 4rem;
 }
 
 .pt-2 {
@@ -1189,11 +1189,6 @@ input[type="file"]::file-selector-button:hover {
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
-  .sm\:px-10 {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-  }
-
   .sm\:px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
@@ -1259,11 +1254,6 @@ input[type="file"]::file-selector-button:hover {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
-  }
-
-  .lg\:px-10 {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
   }
 
   .lg\:text-left {

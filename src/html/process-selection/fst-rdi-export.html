@@ -133,17 +133,17 @@
                 >Uncategorized People - Config</a
               >
               <a
-                href="#"
+                href="/src/html/configuration/challenger-config.html"
                 class="block whitespace-nowrap opacity-60 transition-all hover:opacity-100"
                 >Challenger Uploading - Config</a
               >
               <a
-                href="#"
+                href="/src/html/configuration/fst-config.html"
                 class="block whitespace-nowrap opacity-60 transition-all hover:opacity-100"
                 >FST - Config</a
               >
               <a
-                href="#"
+                href="/src/html/configuration/far-config.html"
                 class="block whitespace-nowrap opacity-60 transition-all hover:opacity-100"
                 >FAR - Config</a
               >
@@ -154,105 +154,107 @@
     </section>
 
     <section
-      class="home-section relative left-[275px] w-[calc(100%-275px)] h-screen pt-4 px-4 bg-[#F5F8F9] transition-all duration-500 lg:px-10"
+      class="home-section relative left-[275px] w-[calc(100%-275px)] h-screen flex justify-center px-3 pt-16 bg-[#F5F8F9] transition-all duration-500"
     >
-      <div class="mb-10 text-center">
-        <h2 class="text-2xl text-[#333] font-semibold mb-3">
-          GCTE FST RDI Export
-        </h2>
-        <p class="mx-auto max-w-4xl">
-          App will process the Uncategorized People file to modify the file by
-          adding columns and updating some values. Additionally, two CSV file
-          will be generated for uploading.
-        </p>
-      </div>
-
-      <div class="pt-4 pb-8 px-3 w-full bg-white rounded-lg shadow-md">
-        <div
-          class="flex flex-col space-y-3 mb-8 lg:flex-row lg:items-center lg:justify-between lg:space-y-0"
-        >
-          <div
-            class="flex flex-col space-y-3 md:flex-row md:space-x-4 md:space-y-0"
-          >
-            <div>
-              <label
-                for="start-date"
-                class="py-2 px-3 text-sm bg-gray-200 rounded-l"
-                >Start Date</label
-              >
-              <input
-                id="start-date"
-                type="date"
-                class="-ml-1.5 py-[5.7px] px-2 text-sm border rounded-r cursor-pointer"
-              />
-            </div>
-            <div>
-              <label
-                for="end-date"
-                class="py-2 px-3 text-sm bg-gray-200 rounded-l"
-                >End Date</label
-              >
-              <input
-                id="end-date"
-                type="date"
-                class="-ml-1.5 py-[5.7px] px-2 text-sm border rounded-r cursor-pointer"
-              />
-            </div>
-          </div>
-          <div class="flex space-x-2">
-            <button
-              class="px-4 py-[5px] text-white bg-[#00729c] rounded-lg shadow-lg transition-all hover:bg-[#008cc0] hover:translate-y-0.5 hover:shadow-xl sm:px-5 sm:py-[6px]"
-            >
-              Submit
-            </button>
-            <button
-              class="px-4 py-[5px] text-white bg-gray-500 rounded-lg shadow-lg transition-all hover:bg-gray-600 hover:translate-y-0.5 hover:shadow-xl sm:px-5 sm:py-[6px]"
-            >
-              Refresh
-            </button>
-          </div>
+      <div>
+        <div class="mb-12 text-center">
+          <h2 class="text-2xl text-[#333] font-semibold mb-3">
+            GCTE FST RDI Export
+          </h2>
+          <p class="mx-auto max-w-4xl">
+            App will process the Uncategorized People file to modify the file by
+            adding columns and updating some values. Additionally, two CSV file
+            will be generated for uploading.
+          </p>
         </div>
 
-        <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
-          <div class="bg-white border rounded-md">
+        <div class="pt-4 pb-8 px-3 w-full bg-white rounded-lg shadow-md">
+          <div
+            class="flex flex-col space-y-3 mb-8 lg:flex-row lg:items-center lg:justify-between lg:space-y-0"
+          >
             <div
-              class="flex flex-col space-y-1.5 py-2 px-3 bg-zinc-100 lg:flex-row lg:items-center lg:justify-between lg:space-y-0"
+              class="flex flex-col space-y-3 md:flex-row md:space-x-4 md:space-y-0"
             >
-              <h4 class="text-center font-semibold lg:text-left">
-                AWM FST Files
-              </h4>
+              <div>
+                <label
+                  for="start-date"
+                  class="py-2 px-3 text-sm bg-gray-200 rounded-l"
+                  >Start Date</label
+                >
+                <input
+                  id="start-date"
+                  type="date"
+                  class="-ml-1.5 py-[5.7px] px-2 text-sm border rounded-r cursor-pointer"
+                />
+              </div>
+              <div>
+                <label
+                  for="end-date"
+                  class="py-2 px-3 text-sm bg-gray-200 rounded-l"
+                  >End Date</label
+                >
+                <input
+                  id="end-date"
+                  type="date"
+                  class="-ml-1.5 py-[5.7px] px-2 text-sm border rounded-r cursor-pointer"
+                />
+              </div>
+            </div>
+            <div class="flex space-x-2">
               <button
-                class="px-4 py-1 text-white bg-gray-500 text-sm rounded-lg transition-all hover:bg-gray-600"
+                class="px-4 py-[5px] text-white bg-[#00729c] rounded-lg shadow-lg transition-all hover:bg-[#008cc0] hover:translate-y-0.5 hover:shadow-xl sm:px-5 sm:py-[6px]"
               >
-                Download File
+                Submit
+              </button>
+              <button
+                class="px-4 py-[5px] text-white bg-gray-500 rounded-lg shadow-lg transition-all hover:bg-gray-600 hover:translate-y-0.5 hover:shadow-xl sm:px-5 sm:py-[6px]"
+              >
+                Refresh
               </button>
             </div>
-            <ul class="list text-sm">
-              <li class="py-1 px-3 border-b">AWM FST Assessment Form</li>
-              <li class="py-1 px-3 border-b">AWM FST Assessment Form 2</li>
-            </ul>
           </div>
-          <div class="bg-white border rounded-md">
-            <div
-              class="flex flex-col space-y-1.5 py-2 px-3 bg-zinc-100 lg:flex-row lg:items-center lg:justify-between lg:space-y-0"
-            >
-              <h4 class="text-center font-semibold lg:text-left">
-                Sport Medicine FST Files
-              </h4>
-              <button
-                class="px-4 py-1 text-white bg-gray-500 text-sm rounded-lg transition-all hover:bg-gray-600"
+
+          <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
+            <div class="bg-white border rounded-md">
+              <div
+                class="flex flex-col space-y-1.5 py-2 px-3 bg-zinc-100 lg:flex-row lg:items-center lg:justify-between lg:space-y-0"
               >
-                Download File
-              </button>
+                <h4 class="text-center font-semibold lg:text-left">
+                  AWM FST Files
+                </h4>
+                <button
+                  class="px-4 py-1 text-white bg-gray-500 text-sm rounded-lg transition-all hover:bg-gray-600"
+                >
+                  Download File
+                </button>
+              </div>
+              <ul class="list text-sm">
+                <li class="py-1 px-3 border-b">AWM FST Assessment Form</li>
+                <li class="py-1 px-3 border-b">AWM FST Assessment Form 2</li>
+              </ul>
             </div>
-            <ul class="list text-sm">
-              <li class="py-1 px-3 border-b">
-                US Sports Med FST Activity Tracker
-              </li>
-              <li class="py-1 px-3 border-b">
-                US Sports Med FST Activity Tracker 2
-              </li>
-            </ul>
+            <div class="bg-white border rounded-md">
+              <div
+                class="flex flex-col space-y-1.5 py-2 px-3 bg-zinc-100 lg:flex-row lg:items-center lg:justify-between lg:space-y-0"
+              >
+                <h4 class="text-center font-semibold lg:text-left">
+                  Sport Medicine FST Files
+                </h4>
+                <button
+                  class="px-4 py-1 text-white bg-gray-500 text-sm rounded-lg transition-all hover:bg-gray-600"
+                >
+                  Download File
+                </button>
+              </div>
+              <ul class="list text-sm">
+                <li class="py-1 px-3 border-b">
+                  US Sports Med FST Activity Tracker
+                </li>
+                <li class="py-1 px-3 border-b">
+                  US Sports Med FST Activity Tracker 2
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

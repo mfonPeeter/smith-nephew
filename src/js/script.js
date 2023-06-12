@@ -13,3 +13,17 @@ submenuBtns.forEach((submenuBtn) => {
 sidebarBtn.addEventListener("click", () => {
   sidebar.classList.toggle("close");
 });
+
+// Keeping the side navigation closed on smaller screen sizes
+
+const displayWindowSize = () => {
+  const width = document.documentElement.clientwidth;
+
+  if (width <= 820) {
+    sidebar.classList.add("close");
+  } else {
+    sidebar.classList.remove("close");
+  }
+};
+
+window.addEventListener("resize", displayWindowSize);
