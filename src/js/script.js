@@ -14,12 +14,14 @@ sidebarBtn.addEventListener("click", () => {
   sidebar.classList.toggle("close");
 });
 
-// Keeping the side navigation closed on smaller screen sizes
+// Keeping the sidebar nav closed on smaller screen sizes
 
 const displayWindowSize = () => {
-  const width = document.documentElement.clientwidth;
+  const width = document.documentElement.clientWidth;
 
-  if (width <= 820) {
+  console.log(width);
+
+  if (width <= 768) {
     sidebar.classList.add("close");
   } else {
     sidebar.classList.remove("close");
@@ -27,3 +29,4 @@ const displayWindowSize = () => {
 };
 
 window.addEventListener("resize", displayWindowSize);
+window.addEventListener("load", displayWindowSize);
