@@ -19,10 +19,10 @@ sidebarBtn.addEventListener("click", () => {
 const displayWindowSize = () => {
   const width = document.documentElement.clientWidth;
 
-  if (width >= 768) {
-    sidebar.classList.remove("close");
-  } else {
+  if (width <= 768) {
     sidebar.classList.add("close");
+  } else {
+    sidebar.classList.remove("close");
   }
 };
 
