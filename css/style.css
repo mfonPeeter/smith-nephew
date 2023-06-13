@@ -638,6 +638,7 @@ input[type="file"]::file-selector-button {
   transition: background 0.2s ease-in-out;
   --tw-bg-opacity: 1;
   background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+  outline-color: #4b5563;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -1108,6 +1109,14 @@ input[type="file"]::file-selector-button:hover {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.outline-\[\#008cc0\] {
+  outline-color: #008cc0;
+}
+
+.outline-gray-600 {
+  outline-color: #4b5563;
 }
 
 .transition-all {
